@@ -30,7 +30,7 @@ export default function BadBreathPage() {
             "underlying health issues such as respiratory infections or digestive problems.",
           ],
         },
-        image: "/images/bad-breath-halitosis/section1.webp",
+        image: "/images/bad-breath/section1.webp",
       },
     ],
     isLinkCards: false,

@@ -3,7 +3,7 @@ import { ProblemsWeTreat } from "@/app/shared/models/problems-we-treat";
 
 export default function GumDiseasePage() {
   const gumDiseaseData: ProblemsWeTreat = {
-    heroImage: "/images/gum-diseases/hero.webp",
+    heroImage: "/images/gum-disease/hero.webp",
     headingLight: "Gum",
     headingBold: "Diseases",
     callToActions: [
@@ -31,7 +31,7 @@ export default function GumDiseasePage() {
             "pus between teeth and gums in severe cases.",
           ],
         },
-        image: "/images/gum-diseases/section1.webp",
+        image: "/images/gum-disease/section1.webp",
       },
     ],
     isLinkCards: false,

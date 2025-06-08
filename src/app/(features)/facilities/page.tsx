@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { BookNowButton } from "../../shared/components";
 
 export default function FacilitiesPage() {

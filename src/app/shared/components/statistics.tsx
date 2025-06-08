@@ -1,7 +1,7 @@
 "use client";
 
 import type { StatisticProps } from "antd";
-import { Col, Row, Statistic } from "antd";
+import { Statistic } from "antd";
 import CountUp from "react-countup";
 
 const formatter: StatisticProps["formatter"] = (value) => (

@@ -3,16 +3,17 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 interface BlogPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 // Generate metadata for SEO
 export async function generateMetadata({
   params,
 }: BlogPageProps): Promise<Metadata> {
-  const blog = dentalBlogs.find((blog) => blog.slug === params.slug);
+  const { slug } = await params;
+  const blog = dentalBlogs.find((blog) => blog.slug === slug);
 
   if (!blog) {
     return {
@@ -34,8 +35,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function BlogDetailPage({ params }: BlogPageProps) {
-  const blog = dentalBlogs.find((blog) => blog.slug === params.slug);
+export default async function BlogDetailPage({ params }: BlogPageProps) {
+  const { slug } = await params;
+  const blog = dentalBlogs.find((blog) => blog.slug === slug);
 
   if (!blog) {
     return (

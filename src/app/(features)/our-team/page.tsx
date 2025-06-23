@@ -2,17 +2,23 @@ import Image from "next/image";
 
 const doctors = [
   {
+    name: "Dr. Sunny Sancheti",
+    specialization: "Digital Expert & Implantologist",
+    image: "/images/doctors/sunny.jpeg",
+    description: "Implantologist & Smilemakeover / Prosthetic Expert",
+  },
+  {
+    name: "Dr. Radhika Jadhav",
+    specialization: "Endodontist & Implantologist",
+    image: "/images/doctors/radhika.jpg",
+    description: "ROOT CANAL & Smile Expert",
+  },
+  {
     name: "Dr. Abdul Hameed",
     specialization: "Maxillofacial Surgeon",
     image: "/images/doctors/abdul_hameed.jpeg",
     description:
       "Dental & Craniofacial Reconstruction | TMJ & Orthognathic Surgery Expert",
-  },
-  {
-    name: "Dr. Sagar Shah",
-    specialization: "MDS Prosthodontics",
-    image: "/images/doctors/sagar.jpeg",
-    description: "",
   },
   {
     name: "Dr. Rachna Darak",
@@ -25,24 +31,6 @@ const doctors = [
     specialization: "Oral & Maxillofacial Surgeon",
     image: "/images/doctors/satyajit.jpeg",
     description: "Facial Trauma | Dental Implant | Oral Cancer",
-  },
-  {
-    name: "Dr. Pankaj Kadam",
-    specialization: "MDS Prosthodontist",
-    image: "/images/doctors/pankaj.jpeg",
-    description: "",
-  },
-  {
-    name: "Dr. Radhika Jadhav",
-    specialization: "Endodontist & Implantologist",
-    image: "/images/doctors/radhika.jpeg",
-    description: "Smile Expert",
-  },
-  {
-    name: "Dr. Sunny Sancheti",
-    specialization: "Digital Expert & Implantologist",
-    image: "/images/doctors/sunny.jpeg",
-    description: "Smile Expert",
   },
   {
     name: "Dr. Prasanna Bhandare",

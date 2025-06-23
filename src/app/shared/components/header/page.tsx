@@ -19,6 +19,27 @@ interface HeaderProps {
   menuItems?: MenuItem[];
 }
 
+const specialityMenus: MenuItem[] = [
+  {
+    name: "dental-implants",
+    displayText: "Dental Implants",
+    link: "/implants",
+    childMenus: [],
+  },
+  {
+    name: "aligners",
+    displayText: "Aligners",
+    link: "/aligners",
+    childMenus: [],
+  },
+  {
+    name: "smile-design",
+    displayText: "Smile Makeover",
+    link: "/smile-makeover",
+    childMenus: [],
+  },
+];
+
 const aboutChildMenus: MenuItem[] = [
   {
     name: "our-story",
@@ -38,12 +59,12 @@ const aboutChildMenus: MenuItem[] = [
     link: "/our-team",
     childMenus: [],
   },
-  {
-    name: "gallery",
-    displayText: "Our Gallery",
-    link: "/gallery",
-    childMenus: [],
-  },
+  // {
+  //   name: "gallery",
+  //   displayText: "Our Gallery",
+  //   link: "/gallery",
+  //   childMenus: [],
+  // },
   {
     name: "blog",
     displayText: "Our Blog",
@@ -110,7 +131,7 @@ const problemsWeTreatChildMenus: MenuItem[] = [
   {
     name: "gum-diseases",
     displayText: "Gum Diseases",
-    link: "/gum-diseases",
+    link: "/gum-disease",
     childMenus: [],
   },
   {
@@ -407,6 +428,12 @@ export default function Header({
       childMenus: aboutChildMenus,
     },
     {
+      name: "our-specilizations",
+      displayText: "Speclializations",
+      link: "",
+      childMenus: specialityMenus,
+    },
+    {
       name: "problemsWeTreat",
       displayText: "Problems We Treat",
       link: "",
@@ -571,7 +598,7 @@ export default function Header({
                         {({ open }) => (
                           <>
                             <Popover.Button
-                              className={`group inline-flex items-center px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-300 focus:outline-none ${
+                              className={`group inline-flex items-center px-2 py-2 text-sm font-semibold rounded-lg transition-all duration-300 focus:outline-none ${
                                 isActive
                                   ? "text-pink-600 "
                                   : hoveredMenu === item.name || open
@@ -715,7 +742,7 @@ export default function Header({
               {/* CTA Button */}
               <div className="ml-6 pl-6 border-l border-gray-200">
                 <BookNowButton variant="hero" size="small" className="!py-2">
-                  Book Appointment
+                  Book now
                 </BookNowButton>
               </div>
             </nav>

@@ -39,27 +39,6 @@ export default function AlignersPage() {
     },
   ];
 
-  const beforeAfterData = [
-    {
-      before: "/aligners/before1.jpg",
-      after: "/aligners/after1.jpg",
-      case: "Crowding",
-      duration: "11 Months",
-    },
-    {
-      before: "/aligners/before2.jpg",
-      after: "/aligners/after2.jpg",
-      case: "Spacing",
-      duration: "7 Months",
-    },
-    {
-      before: "/aligners/before3.jpg",
-      after: "/aligners/after3.jpg",
-      case: "Crossbite",
-      duration: "14 Months",
-    },
-  ];
-
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}

@@ -732,30 +732,30 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
+                name: "Dr. Sunny Sancheti",
+                specialization: "Digital Expert & Implantologist",
+                image: "/images/doctors/sunny.jpeg",
+                description:
+                  "Implantologist & Smilemakeover / Prosthetic Expert",
+              },
+              {
+                name: "Dr. Radhika Jadhav",
+                specialization: "Endodontist & Implantologist",
+                image: "/images/doctors/radhika.jpg",
+                description: "ROOT CANAL & Smile Expert",
+              },
+              {
                 name: "Dr. Abdul Hameed",
-                specialty: "Maxillofacial Surgeon",
+                specialization: "Maxillofacial Surgeon",
                 image: "/images/doctors/abdul_hameed.jpeg",
                 description:
                   "Dental & Craniofacial Reconstruction | TMJ & Orthognathic Surgery Expert",
               },
               {
-                name: "Dr. Sagar Shah",
-                specialty: "MDS Prosthodontics",
-                image: "/images/doctors/sagar.jpeg",
-                description: "Expert in advanced prosthodontic procedures",
-              },
-              {
                 name: "Dr. Rachna Darak",
-                specialty: "MDS Orthodontics",
+                specialization: "MDS Orthodontics",
                 image: "/images/doctors/rachna.jpeg",
-                description:
-                  "Specialized in aligners and orthodontic treatment",
-              },
-              {
-                name: "Dr. Satyajit Wadje",
-                specialty: "Oral & Maxillofacial Surgeon",
-                image: "/images/doctors/satyajit.jpeg",
-                description: "Facial Trauma | Dental Implant | Oral Cancer",
+                description: "Specialized in aligners",
               },
             ].map((doctor, index) => (
               <div key={index} className="group relative">

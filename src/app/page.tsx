@@ -34,7 +34,7 @@ export default function Home() {
                 Award Winning Dental Care
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight ">
                 Your Perfect
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">
                   {" "}
@@ -99,7 +99,7 @@ export default function Home() {
               <div className="relative bg-white rounded-3xl p-8 shadow-2xl">
                 <div className="aspect-w-4 aspect-h-3">
                   <img
-                    src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                    src="/images/hero.webp"
                     alt="Modern Dental Office"
                     className="w-full h-full object-cover rounded-2xl"
                   />
@@ -111,10 +111,16 @@ export default function Home() {
                     <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center">
                       <svg
                         className="w-6 h-6 text-pink-600"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
                       >
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
                       </svg>
                     </div>
                     <div>
@@ -767,7 +773,7 @@ export default function Home() {
                       className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                     <div className="mb-2">
                       <div className="text-sm opacity-90">
@@ -779,9 +785,6 @@ export default function Home() {
                     <h3 className="text-xl font-bold text-gray-900 mb-1">
                       {doctor.name}
                     </h3>
-                    <p className="text-pink-600 font-medium">
-                      {doctor.specialty}
-                    </p>
                   </div>
                 </div>
               </div>

@@ -569,14 +569,17 @@ export default function Header({
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/" className="flex items-center group">
-                <div className="relative">
+                <div className="relative flex items-center space-x-2">
                   <Image
-                    src="/logo.png"
+                    src="/kia-logo.png"
                     alt="KIA Dental Logo"
-                    width={150}
-                    height={50}
+                    width={40}
+                    height={40}
                     className=""
                   />
+                  <span className="text-xl font-bold text-black/70">
+                    KIA Dental
+                  </span>
                 </div>
               </Link>
             </div>
@@ -838,7 +841,7 @@ export default function Header({
                               >
                                 <Popover.Panel
                                   static
-                                  className="mt-2 ml-4 space-y-1 border-l-2 border-pink-100 pl-4"
+                                  className="mt-2 ml-4 space-y-1 border-l-2 border-pink-100 pl-4 max-h-60 overflow-y-auto"
                                 >
                                   {item.childMenus.map((child) => {
                                     const isChildActive = isChildMenuActive(

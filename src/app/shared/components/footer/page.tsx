@@ -134,8 +134,50 @@ export default function Footer() {
                     Our Services
                   </Link>
                 </li>
-
                 <li>
+                  <Link
+                    href="/facilities"
+                    className="text-gray-300 hover:text-pink-400 transition-colors duration-300 flex items-center group"
+                  >
+                    <svg
+                      className="w-4 h-4 mr-2 text-pink-500 transform group-hover:translate-x-1 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                    Our Facilities
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/international-clients"
+                    className="text-gray-300 hover:text-pink-400 transition-colors duration-300 flex items-center group"
+                  >
+                    <svg
+                      className="w-4 h-4 mr-2 text-pink-500 transform group-hover:translate-x-1 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                    International Clients
+                  </Link>
+                </li>
+
+                {/* <li>
                   <Link
                     href="/contact"
                     className="text-gray-300 hover:text-pink-400 transition-colors duration-300 flex items-center group"
@@ -155,10 +197,10 @@ export default function Footer() {
                     </svg>
                     Contact
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
-                    href="/blog"
+                    href="/our-blogs"
                     className="text-gray-300 hover:text-pink-400 transition-colors duration-300 flex items-center group"
                   >
                     <svg

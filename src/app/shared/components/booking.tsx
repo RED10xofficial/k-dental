@@ -32,7 +32,7 @@ interface BookingFormData {
   name: string;
   phone: string;
   email: string;
-  date: string;
+  date: Dayjs;
   timeSlot: string;
   serviceDetails: string;
 }
@@ -50,7 +50,7 @@ const generateTimeSlots = () => {
     const endDisplayTime = `${endTime12h}:00 ${endAmpm}`;
 
     slots.push({
-      value: `${hour}:00`,
+      value: `${displayTime} - ${endDisplayTime}`,
       label: `${displayTime} - ${endDisplayTime}`,
     });
   }
@@ -65,17 +65,78 @@ export const BookingForm: React.FC = () => {
   const handleSubmit = async (values: BookingFormData) => {
     setLoading(true);
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      // Create FormData for Web3Forms
+      const formData = new FormData();
 
-      console.log("Booking submitted:", values);
-      message.success(
-        "Booking request submitted successfully! We will contact you soon."
-      );
+      // Add Web3Forms access key
+      formData.append("access_key", "b1ac5586-9989-49f8-89c4-92499ec293f9");
 
-      form.resetFields();
-      closeBookingModal();
-    } catch {
+      // Add honeypot field for spam protection (leave empty)
+      formData.append("botcheck", "");
+
+      // Add form fields
+      formData.append("name", values.name);
+      formData.append("phone", values.phone);
+      formData.append("email", values.email);
+
+      // Format date properly to avoid timezone issues
+      const selectedDate = values.date;
+      const formattedDate = selectedDate
+        ? selectedDate.format("YYYY-MM-DD")
+        : "";
+      formData.append("date", formattedDate);
+
+      formData.append("timeSlot", values.timeSlot);
+      formData.append("serviceDetails", values.serviceDetails);
+
+      // Add subject for the email
+      formData.append("subject", "New Dental Appointment Booking");
+
+      // Add redirect URL (optional - can be your website)
+
+      // Add from name and email for better delivery
+      formData.append("from_name", "Kia Dental Booking System");
+      formData.append("replyto", values.email);
+
+      // Add custom message format
+      const customMessage = `
+New Appointment Booking Request:
+
+Patient Name: ${values.name}
+Phone Number: ${values.phone}
+Email Address: ${values.email}
+Preferred Date: ${formattedDate}
+Preferred Time: ${values.timeSlot}
+Service Details: ${values.serviceDetails}
+
+Please contact the patient to confirm the appointment.
+      `;
+      formData.append("message", customMessage);
+
+      // Send to Web3Forms
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        console.log("Booking submitted successfully:", values);
+        message.success(
+          "Booking request submitted successfully! We will contact you soon."
+        );
+
+        form.resetFields();
+        closeBookingModal();
+      } else {
+        console.log("Error", data);
+        message.error(
+          data.message || "Failed to submit booking. Please try again."
+        );
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
       message.error("Failed to submit booking. Please try again.");
     } finally {
       setLoading(false);

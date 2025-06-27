@@ -18,7 +18,7 @@ const ProblemsWeTreatPage = ({ data }: { data: ProblemsWeTreat }) => {
         />
 
         {/* Modern Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-purple-900/40 to-pink-900/50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-purple-900/70 to-pink-900/70" />
 
         {/* Floating Geometric Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -39,7 +39,7 @@ const ProblemsWeTreatPage = ({ data }: { data: ProblemsWeTreat }) => {
                 {data.headingLight}
               </span>
               <br />
-              <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-pink-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-pink-400 via-purple-300 to-pink-200 bg-clip-text text-transparent">
                 {data.headingBold}
               </span>
             </h1>

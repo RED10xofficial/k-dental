@@ -365,7 +365,7 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex space-x-6">
-              <Link
+              {/* <Link
                 href="/privacy"
                 className="hover:text-pink-400 transition-colors duration-300"
               >
@@ -382,7 +382,17 @@ export default function Footer() {
                 className="hover:text-pink-400 transition-colors duration-300"
               >
                 Cookie Policy
-              </Link>
+              </Link> */}
+              <p className="text-gray-400 text-sm">
+                Powered by{" "}
+                <a
+                  target="_blank"
+                  href="https://www.red10x.com"
+                  className="text-red-500 hover:text-red-600 transition-colors duration-300"
+                >
+                  RED10X
+                </a>
+              </p>
             </div>
           </div>
         </div>

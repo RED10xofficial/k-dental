@@ -69,7 +69,7 @@ export const BookingForm: React.FC = () => {
       const formData = new FormData();
 
       // Add Web3Forms access key
-      formData.append("access_key", "b1ac5586-9989-49f8-89c4-92499ec293f9");
+      formData.append("access_key", "0ea0c0ea-9e49-4708-b184-54702a7482f5");
 
       // Add honeypot field for spam protection (leave empty)
       formData.append("botcheck", "");

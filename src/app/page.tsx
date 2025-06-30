@@ -817,7 +817,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
+      {/* <section className="py-20 bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -893,7 +893,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-600 relative overflow-hidden">

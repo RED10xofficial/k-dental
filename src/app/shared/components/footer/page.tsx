@@ -31,7 +31,7 @@ export default function Footer() {
               </div>
 
               {/* Social Media */}
-              <div>
+              {/* <div>
                 <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
                 <div className="flex space-x-4">
                   <a
@@ -83,7 +83,7 @@ export default function Footer() {
                     </svg>
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Quick Links */}
@@ -270,7 +270,9 @@ export default function Footer() {
                   <div>
                     <div className="text-gray-300 text-sm">Email Us</div>
                     <div className="text-white font-semibold">
-                      info@kiadental.com
+                      <a href="mailto:kiadentalclinic@gmail.com">
+                        kiadentalclinic@gmail.com
+                      </a>
                     </div>
                   </div>
                 </li>

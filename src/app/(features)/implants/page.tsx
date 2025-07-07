@@ -52,7 +52,7 @@ export default function ImplantsPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <BookNowButton variant="hero" size="large">
-                  Free Consultation
+                  Book Consultation
                 </BookNowButton>
                 <Link
                   href="/about"
@@ -673,7 +673,7 @@ export default function ImplantsPage() {
             Ready to Transform Your Life with Dental Implants?
           </h2>
           <p className="text-xl text-pink-100 mb-8 max-w-2xl mx-auto">
-            Schedule your free consultation today and discover how All-on-4 or
+            Schedule your consultation today and discover how All-on-4 or
             All-on-6 implants can give you the confident smile you deserve.
           </p>
 

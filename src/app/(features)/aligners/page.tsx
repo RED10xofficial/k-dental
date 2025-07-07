@@ -89,7 +89,7 @@ export default function AlignersPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <BookNowButton variant="hero" size="large">
-                  Free Aligner Scan
+                  Book Aligner Scan
                 </BookNowButton>
                 <Link
                   href="/contact"
@@ -459,13 +459,12 @@ export default function AlignersPage() {
           </h2>
           <p className="text-xl text-pink-100 mb-8 max-w-2xl mx-auto">
             Your journey to a confident, straight smile starts here. Schedule
-            your free, no-obligation consultation with our aligner experts
-            today.
+            your no-obligation consultation with our aligner experts today.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <BookNowButton variant="ghost" size="large">
-              Book Your Free Scan
+              Book Your Scan
             </BookNowButton>
           </div>
         </div>

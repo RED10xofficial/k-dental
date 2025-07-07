@@ -139,7 +139,7 @@ export default function SmileMakeoverPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <BookNowButton variant="hero" size="large">
-                  Free Consultation
+                  Book Consultation
                 </BookNowButton>
                 <Link
                   href="/about"
@@ -537,13 +537,13 @@ export default function SmileMakeoverPage() {
             Ready to Transform Your Smile?
           </h2>
           <p className="text-xl text-pink-100 mb-8 max-w-2xl mx-auto">
-            Schedule your free consultation today and discover how a smile
-            makeover can boost your confidence and transform your life.
+            Schedule your consultation today and discover how a smile makeover
+            can boost your confidence and transform your life.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <BookNowButton variant="ghost" size="large">
-              Free Consultation
+              Book Consultation
             </BookNowButton>
             <Link
               href="/contact"

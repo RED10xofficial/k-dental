@@ -38,6 +38,12 @@ const specialityMenus: MenuItem[] = [
     link: "/smile-makeover",
     childMenus: [],
   },
+  {
+    name: "invisalign",
+    displayText: "Invisalign",
+    link: "/invisalign",
+    childMenus: [],
+  },
 ];
 
 const aboutChildMenus: MenuItem[] = [

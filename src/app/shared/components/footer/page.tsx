@@ -301,10 +301,16 @@ export default function Footer() {
                   <div>
                     <div className="text-gray-300 text-sm">Visit Us</div>
                     <div className="text-white font-semibold">
-                      2nd floor, Vardan, Plot No.1,
-                      <br /> Nav-Maharashtra Hou Soc, above kothari hospital,
-                      <br /> Vasant Baug, Taware Colony,
-                      <br /> Bibwewadi, Pune, Maharashtra 411009
+                      <a
+                        className="hover:text-pink-400 transition-colors duration-300 underline"
+                        href="https://www.google.com/maps/place/kia+dental+clinic/@18.4869625,73.8572782,1031m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2c11f51e0e381:0x4c7b1e20ead8f0a6!8m2!3d18.4869625!4d73.8572782!16s%2Fg%2F11lm78vdk_?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank"
+                      >
+                        2nd floor, Vardan, Plot No.1,
+                        <br /> Nav-Maharashtra Hou Soc, above kothari hospital,
+                        <br /> Vasant Baug, Taware Colony,
+                        <br /> Bibwewadi, Pune, Maharashtra 411009
+                      </a>
                     </div>
                   </div>
                 </li>

@@ -939,7 +939,7 @@ export default function Home() {
                 />
               </svg>
               <span className="text-lg font-semibold">
-                Call Now: (313) 555-SMILE
+                Call Now: <a href="tel:+918625050627">+91 8625050627</a>
               </span>
             </div>
           </div>

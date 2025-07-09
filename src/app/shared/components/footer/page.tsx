@@ -247,7 +247,7 @@ export default function Footer() {
                   <div>
                     <div className="text-gray-300 text-sm">Call Us</div>
                     <div className="text-white font-semibold">
-                      (313) 555-SMILE
+                      <a href="tel:+918625050627">+91 8625050627</a>
                     </div>
                   </div>
                 </li>
@@ -301,9 +301,10 @@ export default function Footer() {
                   <div>
                     <div className="text-gray-300 text-sm">Visit Us</div>
                     <div className="text-white font-semibold">
-                      123 Dental Street
-                      <br />
-                      Detroit, MI 48226
+                      2nd floor, Vardan, Plot No.1,
+                      <br /> Nav-Maharashtra Hou Soc, above kothari hospital,
+                      <br /> Vasant Baug, Taware Colony,
+                      <br /> Bibwewadi, Pune, Maharashtra 411009
                     </div>
                   </div>
                 </li>

@@ -70,12 +70,12 @@ export default function InternationalClientsPage() {
   ];
 
   const accommodationFeatures = [
-    "3, 4 & 5 Star Hotel Partnerships",
-    "Short & Long-term Stays",
-    "Tourist Destination Access",
-    "Exotic Kerala Locations",
-    "Resort-style Accommodation",
-    "Transportation Arrangements",
+    "5-Star Hotel Partnerships",
+    "Business & Luxury Stays",
+    "Prime Location Access",
+    "Pune's Cultural Capital",
+    "World-Class Accommodation",
+    "Airport & Transportation",
   ];
 
   return (
@@ -119,10 +119,10 @@ export default function InternationalClientsPage() {
               </h1>
 
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Experience world-class dental care in God&apos;s Own Country,
-                Kerala, India. Combine your dental treatment with an
-                unforgettable vacation while saving up to 90% on treatment costs
-                compared to US and European prices.
+                Experience world-class dental care in Pune, India&apos;s
+                cultural capital and the Oxford of the East. Combine your dental
+                treatment with an unforgettable cultural experience while saving
+                up to 90% on treatment costs compared to US and European prices.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -185,9 +185,9 @@ export default function InternationalClientsPage() {
               Why Choose Dental Tourism with Us?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Combining exceptional dental care with the beauty of Kerala, India
-              - experience premium treatment while exploring exotic
-              destinations.
+              Combining exceptional dental care with the vibrant energy of Pune
+              - experience premium treatment while exploring India&apos;s
+              cultural capital and educational hub.
             </p>
           </div>
 
@@ -227,7 +227,7 @@ export default function InternationalClientsPage() {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Experience the same international quality treatments at a fraction
-              of the cost. Use your savings for an amazing Indian vacation!
+              of the cost. Use your savings for an amazing Pune experience!
             </p>
           </div>
 
@@ -338,7 +338,7 @@ export default function InternationalClientsPage() {
                 step: "03",
                 title: "Treatment & Tourism",
                 description:
-                  "Receive world-class treatment while exploring the beautiful destinations of Kerala.",
+                  "Receive world-class treatment while exploring the vibrant attractions of Pune.",
               },
               {
                 step: "04",
@@ -374,12 +374,13 @@ export default function InternationalClientsPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                Stay & Explore Kerala
+                Stay & Explore Pune
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                Thiruvananthapuram, the capital of God&apos;s Own Country,
-                offers exotic tourist destinations alongside world-class
-                accommodation options for your comfortable stay.
+                Pune, India&apos;s cultural capital and the Oxford of the East,
+                offers world-class educational institutions, shopping, and
+                dining experiences alongside premium accommodation options for
+                your comfortable stay.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -440,7 +441,7 @@ export default function InternationalClientsPage() {
                 <div className="flex justify-between items-center py-2 border-b border-gray-100">
                   <span className="text-gray-700">Hotel Accommodation</span>
                   <span className="font-semibold text-gray-900">
-                    3-5 Star Options
+                    5-Star Options
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-100">
@@ -521,7 +522,7 @@ export default function InternationalClientsPage() {
             </h2>
             <p className="text-xl text-pink-100 mb-8">
               Schedule a virtual consultation today and discover how you can
-              save thousands while experiencing the beauty of Kerala, India.
+              save thousands while experiencing the rich culture of Pune, India.
             </p>
           </div>
 

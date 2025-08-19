@@ -23,6 +23,7 @@ import {
 } from "@ant-design/icons";
 import { useBooking } from "../contexts/booking-context";
 import type { Dayjs } from "dayjs";
+import { useRouter } from "next/navigation";
 
 const { Title, Text } = Typography;
 const { Option } = Select;
@@ -61,7 +62,7 @@ export const BookingForm: React.FC = () => {
   const { isBookingModalOpen, closeBookingModal } = useBooking();
   const [form] = Form.useForm();
   const [loading, setLoading] = React.useState(false);
-
+  const router = useRouter();
   const handleSubmit = async (values: BookingFormData) => {
     setLoading(true);
     try {
@@ -123,6 +124,7 @@ Please contact the patient to confirm the appointment.
 
       if (data.success) {
         console.log("Booking submitted successfully:", values);
+        router.push("/booking-success");
         message.success(
           "Booking request submitted successfully! We will contact you soon."
         );

@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --background: #ffffff;
@@ -9,13 +9,11 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: 'Roboto', sans-serif;
+  --font-sans: "Roboto", sans-serif;
 }
-
-
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
